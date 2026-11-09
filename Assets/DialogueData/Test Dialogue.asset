@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6fc8f370ee97db428fdd35074d55550, type: 3}
+  m_Name: Test Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  Sentences:
+  - Text: Testing out dialogue this is very fun wow!
+    emotion: 0
+    name: Girl
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: Still doing it, I wish i could be grinding the pirate token
+    emotion: 1
+    name: Girl
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: God help me, I want free miku and teto
+    emotion: 2
+    name: Girl
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  Character1: {fileID: 0}
+  Character2: {fileID: 0}
+  canPlayerMove: 0
+  chapter1: 0
+  chapter2: 0
+  chapter3: 0
+  boss: 0
