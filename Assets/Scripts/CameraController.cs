@@ -32,7 +32,7 @@ public class CameraController : MonoBehaviour
     private void FollowPlayer()
     {
         Vector3 targetPosition = player.transform.position;
-        targetPosition.y = 0;
+        //targetPosition.y = 0;
         targetPosition.z = -10;
 
         if (targetPosition.x < 0f)

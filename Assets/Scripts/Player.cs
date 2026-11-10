@@ -3,6 +3,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float speed;
+    private float regularSpeed;
     public Rigidbody2D body;
     public BoxCollider2D boxCollider;
     public Animator anim;
@@ -20,6 +21,7 @@ public class Player : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
+        regularSpeed = speed;
     }
 
     // Update is called once per frame
@@ -38,6 +40,16 @@ public class Player : MonoBehaviour
 
     private void Movement()
     {
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+        {
+            speed = regularSpeed * 2;
+            anim.speed = 2;
+        }
+        else
+        {
+            speed = regularSpeed;
+            anim.speed = 1;
+        }
         movement.Set(InputManager.Movement.x, InputManager.Movement.y);
         body.linearVelocity = movement * speed;
 
