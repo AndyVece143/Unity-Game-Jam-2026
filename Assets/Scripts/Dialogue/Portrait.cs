@@ -29,7 +29,7 @@ public class Portrait : MonoBehaviour
     {
         if (i != emotion)
         {
-            StartCoroutine(SpinToWin(i));
+            StartCoroutine(SpinToWin(i, true));
         }
         else
         {
@@ -39,12 +39,17 @@ public class Portrait : MonoBehaviour
         }
     }
 
+    public void ChangeEmotionMinigame(int i)
+    {
+        StartCoroutine(SpinToWin(i, false));
+    }
+
     public void DoneTalking()
     {
         anim.SetBool("done", true);
     }
 
-    IEnumerator SpinToWin(int i)
+    IEnumerator SpinToWin(int i, bool dialogue)
     {
         Vector3 initialScale = transform.localScale;
 
@@ -59,7 +64,14 @@ public class Portrait : MonoBehaviour
         }
         transform.localScale = tinySize;
         anim.SetInteger("emotion", i);
+
         anim.SetBool("done", false);
+
+        if (!dialogue)
+        {
+            yield return new WaitForEndOfFrame();
+            anim.SetBool("done", true);
+        }
 
         float newTime = 0;
         while (newTime < duration)
