@@ -42,4 +42,14 @@ public class CameraController : MonoBehaviour
 
         transform.position = targetPosition;
     }
+
+    public void BeginFollowingPlayer()
+    {
+        state = State.FollowPlayer;
+    }
+
+    public void StopFollowingPlayer()
+    {
+        state = State.StayStill;
+    }
 }

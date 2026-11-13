@@ -140,7 +140,7 @@
                     "name": "",
                     "id": "1d6724cd-3b6b-4dfc-a92c-ee00162e148e",
                     "path": "<Keyboard>/x",
-                    "interactions": "",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "",
                     "action": "Talk",

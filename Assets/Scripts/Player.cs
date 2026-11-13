@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class Player : MonoBehaviour
         NoMove,
     }
     public State state;
+    public SpriteRenderer inspectIcon;
+    public InteractableObject closestObject;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,6 +25,7 @@ public class Player : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
         regularSpeed = speed;
+        inspectIcon.enabled = false;
     }
 
     // Update is called once per frame
@@ -63,7 +67,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void StayStill()
+    public void StayStill()
     {
         movement.Set(0, 0);
         body.linearVelocity = Vector2.zero;
@@ -73,6 +77,60 @@ public class Player : MonoBehaviour
         {
             anim.SetFloat("lasthorizontal", movement.x);
             anim.SetFloat("lastvertical", movement.y);
+        }
+    }
+
+    public void StartMoving()
+    {
+        state = State.Standard;
+        anim.Play("Idle");
+    }
+
+    public void StopMoving()
+    {
+        movement.Set(0, 0);
+        body.linearVelocity = Vector2.zero;
+
+        state = State.NoMove;
+    }
+
+    public void Talk(InputAction.CallbackContext context)
+    {
+        if (context.started && closestObject != null && state == State.Standard)
+        {
+            closestObject.GenerateTextBox();
+            StopMoving();
+            inspectIcon.enabled = false;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Inspect" && state != State.NoMove)
+        {
+            inspectIcon.enabled = true;
+
+            if (collision.gameObject.GetComponent("InteractableObject") as InteractableObject != null)
+            {
+                closestObject = collision.gameObject.GetComponent<InteractableObject>();
+                if (collision.gameObject.GetComponent<InteractableObject>().checker == false)
+                {
+                    inspectIcon.color = Color.white;
+                }
+                else
+                {
+                    inspectIcon.color = Color.gray;
+                }
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Inspect")
+        {
+            inspectIcon.enabled = false;
+            closestObject = null;
         }
     }
 }
