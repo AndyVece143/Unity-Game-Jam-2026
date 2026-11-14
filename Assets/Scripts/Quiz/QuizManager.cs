@@ -21,6 +21,8 @@ public class QuizManager : MonoBehaviour
     public AnswerBlock[] answers;
     public TMP_Text screenText;
 
+    public GameObject directions;
+
     //public AnswerBlock answer1;
     //public AnswerBlock answer2;
     //public AnswerBlock answer3;
@@ -31,7 +33,8 @@ public class QuizManager : MonoBehaviour
     void Start()
     {
         selectedQuestions = GenerateList(allQuestions, questionCount);
-        StartCoroutine(SpawnPaper());
+        StartCoroutine(Beginning());
+        //StartCoroutine(SpawnPaper());
     }
 
     // Update is called once per frame
@@ -71,6 +74,38 @@ public class QuizManager : MonoBehaviour
         {
             playerAnswer.text = playerAnswer.text.Substring(0, playerAnswer.text.Length - 1);
         }
+    }
+
+    public IEnumerator Beginning()
+    {
+        Vector3 ogPosition = directions.transform.position;
+        directions.transform.position = new Vector3(ogPosition.x + 14f, ogPosition.y, ogPosition.z);
+        Vector3 offScreen = directions.transform.position;
+
+        yield return new WaitForSeconds(1);
+        float time = 0;
+        while (time < 1f)
+        {
+            time += Time.deltaTime;
+            float t = time / 1f;
+            directions.transform.position = Vector3.Lerp(offScreen, ogPosition, t);
+            yield return null;
+        }
+
+        directions.transform.position = ogPosition;
+
+        yield return new WaitForSeconds(3);
+
+        time = 0;
+        while (time < 1f)
+        {
+            time += Time.deltaTime;
+            float t = time / 1f;
+            directions.transform.position = Vector3.Lerp(ogPosition, offScreen, t);
+            yield return null;
+        }
+
+        StartCoroutine(SpawnPaper());
     }
 
     public IEnumerator SpawnPaper()
@@ -170,12 +205,22 @@ public class QuizManager : MonoBehaviour
             playerPortrait.ChangeEmotionMinigame(1);
             screenText.text = "YOU PASSED!";
             screenText.color = Color.green;
+
+            yield return new WaitForSeconds(3);
+            StaticData.quizDone = true;
+            StaticData.playerSpawnPoint = 2;
+            LevelLoader loader = LevelLoader.FindAnyObjectByType<LevelLoader>();
+            loader.LoadNextLevel("Town");
         }
         else
         {
             playerPortrait.ChangeEmotionMinigame(5);
             screenText.text = "YOU FAILED!";
             screenText.color = Color.red;
+
+            yield return new WaitForSeconds(3);
+            LevelLoader loader = LevelLoader.FindAnyObjectByType<LevelLoader>();
+            loader.LoadNextLevel("Quiz");
         }
         //StartCoroutine(answers[0].ScrollUp());
         //yield return new WaitForSeconds(0.5f);

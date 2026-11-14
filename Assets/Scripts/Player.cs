@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -17,6 +18,7 @@ public class Player : MonoBehaviour
     public State state;
     public SpriteRenderer inspectIcon;
     public InteractableObject closestObject;
+    public GamerGirl closestGirl;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -102,6 +104,48 @@ public class Player : MonoBehaviour
             StopMoving();
             inspectIcon.enabled = false;
         }
+
+        if (context.started && closestGirl != null && state == State.Standard)
+        {
+            closestGirl.TalkToGirl();
+            StopMoving();
+            inspectIcon.enabled = false;
+        }
+    }
+
+    public IEnumerator GoToPlace(Vector2 location, float duration, Vector2 direction)
+    {
+        StartMoving();
+        state = State.NoMove;
+        float time = 0;
+        Vector2 startingPos = transform.position;
+
+        anim.SetFloat("horizontal", direction.x);
+        anim.SetFloat("vertical", direction.y);
+        movement.Set(direction.x, direction.y);
+
+        while (time < duration)
+        {
+            anim.SetFloat("horizontal", direction.x);
+            anim.SetFloat("vertical", direction.y);
+            time += Time.deltaTime;
+            float t = time / duration;
+            transform.position = Vector2.Lerp(startingPos, location, t);
+            yield return null;
+        }
+
+        transform.position = location;
+
+        switch (direction)
+        {
+            case Vector2 v when v.x == 1 && v.y == 0:
+                anim.Play("idleright");
+                break;
+
+            case Vector2 v when v.x == 0 && v.y == 1:
+                anim.Play("idleup");
+                break;
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -122,6 +166,11 @@ public class Player : MonoBehaviour
                     inspectIcon.color = Color.gray;
                 }
             }
+
+            if (collision.gameObject.GetComponent("GamerGirl") as GamerGirl != null)
+            {
+                closestGirl = collision.gameObject.GetComponent<GamerGirl>();
+            }
         }
     }
 
@@ -131,6 +180,7 @@ public class Player : MonoBehaviour
         {
             inspectIcon.enabled = false;
             closestObject = null;
+            closestGirl = null;
         }
     }
 }

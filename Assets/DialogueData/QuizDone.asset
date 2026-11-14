@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6fc8f370ee97db428fdd35074d55550, type: 3}
+  m_Name: QuizDone
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  Sentences:
+  - Text: Awesome! I passed!
+    emotion: 1
+    name: Penny
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: You sure did! As a reward, you will get part of the game master's lucky
+      number.
+    emotion: 2
+    name: Red Triplet
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: The third and fourth digits are 71.
+    emotion: 0
+    name: Red Triplet
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  Character1: {fileID: 0}
+  Character2: {fileID: 0}
+  canPlayerMove: 1
+  opening: 0
+  minigameTransition: 0
+  minigameNumber: 0

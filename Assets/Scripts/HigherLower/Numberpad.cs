@@ -13,10 +13,13 @@ public class Numberpad : MonoBehaviour
     public Portrait playerPortrait;
     public Portrait ladyPortrait;
     public int guesses = 0;
+
+    public GameObject directions;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        ResetNumberPad();
+        StartCoroutine(Beginning());
+        //ResetNumberPad();
     }
 
     // Update is called once per frame
@@ -59,6 +62,38 @@ public class Numberpad : MonoBehaviour
         }
     }
 
+    public IEnumerator Beginning()
+    {
+        Vector3 ogPosition = directions.transform.position;
+        directions.transform.position = new Vector3(ogPosition.x + 14f, ogPosition.y, ogPosition.z);
+        Vector3 offScreen = directions.transform.position;
+
+        yield return new WaitForSeconds(1);
+        float time = 0;
+        while (time < 1f)
+        {
+            time += Time.deltaTime;
+            float t = time / 1f;
+            directions.transform.position = Vector3.Lerp(offScreen, ogPosition, t);
+            yield return null;
+        }
+
+        directions.transform.position = ogPosition;
+
+        yield return new WaitForSeconds(3);
+
+        time = 0;
+        while (time < 1f)
+        {
+            time += Time.deltaTime;
+            float t = time / 1f;
+            directions.transform.position = Vector3.Lerp(ogPosition, offScreen, t);
+            yield return null;
+        }
+
+        ResetNumberPad();
+    }
+
     public IEnumerator SubmitAnswer()
     {
         if (playerAnswer.text.Length == 2)
@@ -96,6 +131,12 @@ public class Numberpad : MonoBehaviour
                 Debug.Log("Correct!");
                 hints.color = Color.green;
                 hints.text = "WINNER";
+
+                yield return new WaitForSeconds(3);
+                StaticData.highLowerDone = true;
+                StaticData.playerSpawnPoint = 1;
+                LevelLoader loader = LevelLoader.FindAnyObjectByType<LevelLoader>();
+                loader.LoadNextLevel("Town");
             }
 
         }
@@ -104,7 +145,7 @@ public class Numberpad : MonoBehaviour
     private void CheckForGameOver()
     {
         guesses++;
-        if (guesses == 10)
+        if (guesses == 15)
         {
             StartCoroutine(GameOverYeah());
         }

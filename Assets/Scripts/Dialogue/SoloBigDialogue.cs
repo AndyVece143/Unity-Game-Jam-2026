@@ -151,10 +151,17 @@ public class SoloBigDialogue : MonoBehaviour
             yield return null;
         }
 
-        //if (data.canPlayerMove == true)
-        //{
-        //    player.StartMoving();
-        //}
+        if (data.canPlayerMove == true)
+        {
+            Player player = Player.FindAnyObjectByType<Player>();
+            player.StartMoving();
+        }
+
+        if (data.opening == true)
+        {
+            TownManager manager = TownManager.FindAnyObjectByType<TownManager>();
+            manager.StartCutscene();
+        }
 
 
         Destroy(gameObject);
@@ -163,7 +170,7 @@ public class SoloBigDialogue : MonoBehaviour
     IEnumerator TypeLine()
     {
         character1.anim.SetBool("done", false);
-        int i = 2;
+        int i = 4;
         string originalText = data.Sentences[index].Text;
         string displayedText = "";
         int alphaIndex = 0;

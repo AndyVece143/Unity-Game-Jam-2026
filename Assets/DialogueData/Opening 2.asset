@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6fc8f370ee97db428fdd35074d55550, type: 3}
+  m_Name: Opening 2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  Sentences:
+  - Text: 'Oh, I KNOW this guy is important. He has such a strange design. '
+    emotion: 0
+    name: Penny
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: Welcome, young lady, to the Festival of Fortunate Figures!
+    emotion: 0
+    name: Game Guy
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: ...there's no way you named it that.
+    emotion: 6
+    name: Penny
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: I did! Anyway, are you interested in a simple numbers game?
+    emotion: 0
+    name: Game Guy
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: Is it the kind where if your HP drops to 0, you lose?
+    emotion: 0
+    name: Penny
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: Nope! But I should write that down for next time.
+    emotion: 0
+    name: Game Guy
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: 'I have a very lucky number that is very dear to me. And if you can tell
+      me the number, you can enter this cool tent. '
+    emotion: 0
+    name: Game Guy
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: Okay... but how am I supposed to figure out your lucky number? There are
+      a lot of numbers out there.
+    emotion: 2
+    name: Penny
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: It's simple. Track down the Colorful Triplets in town, and win their games
+      to get pieces of the number!
+    emotion: 0
+    name: Game Guy
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: And don't think you can simply look up the answer! My lucky number changes
+      all the time!
+    emotion: 0
+    name: Game Guy
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: ...so it's not that lucky if it's always changing...
+    emotion: 6
+    name: Penny
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: Anyway, what do I get if I enter the cool tent?
+    emotion: 0
+    name: Penny
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: You get the chance to open one of three treasure chests, containing valuable
+      riches!
+    emotion: 0
+    name: Game Guy
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: RICHES?????
+    emotion: 8
+    name: Penny
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: I KNEW IT WAS A GOOD IDEA TO COME HERE!
+    emotion: 8
+    name: Penny
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: That's right! So, what are you waiting for? Go find the triplets!
+    emotion: 1
+    name: Game Guy
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: They will be in theor colored houses around town! Good luck!
+    emotion: 1
+    name: Game Guy
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  Character1: {fileID: 0}
+  Character2: {fileID: 0}
+  canPlayerMove: 1
+  opening: 0

@@ -1,0 +1,912 @@
+fileFormatVersion: 2
+guid: 989055430c469ad408c34f4f1f8bc65f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1253477108298177096
+    second: gameguy_0
+  - first:
+      213: -4277245892537973074
+    second: gameguy_1
+  - first:
+      213: 716650706045800610
+    second: gameguy_2
+  - first:
+      213: 8198848524623797392
+    second: gameguy_3
+  - first:
+      213: -2842838394373161171
+    second: gameguy_4
+  - first:
+      213: -5347631731883393565
+    second: gameguy_5
+  - first:
+      213: 7549456410440002981
+    second: gameguy_6
+  - first:
+      213: -6460472533005302561
+    second: gameguy_7
+  - first:
+      213: 9040240118802616818
+    second: gameguy_8
+  - first:
+      213: 7160160274595878901
+    second: gameguy_9
+  - first:
+      213: 4704055010134161600
+    second: gameguy_10
+  - first:
+      213: 5548486500321349027
+    second: gameguy_11
+  - first:
+      213: -2176833910349033546
+    second: gameguy_12
+  - first:
+      213: -5063080779039014572
+    second: gameguy_13
+  - first:
+      213: -3204361052782508311
+    second: gameguy_14
+  - first:
+      213: -9108129436115377972
+    second: gameguy_15
+  - first:
+      213: -713956184214658750
+    second: gameguy_16
+  - first:
+      213: 5012155008501955643
+    second: gameguy_17
+  - first:
+      213: -5935356699711160767
+    second: gameguy_18
+  - first:
+      213: -6351415707354385585
+    second: gameguy_19
+  - first:
+      213: -6892448168067148299
+    second: gameguy_20
+  - first:
+      213: -1852087854893905773
+    second: gameguy_21
+  - first:
+      213: 8864762017852709342
+    second: gameguy_22
+  - first:
+      213: -8646104853244616892
+    second: gameguy_23
+  - first:
+      213: -7807706268099706872
+    second: gameguy_24
+  - first:
+      213: 6296124070047261872
+    second: gameguy_25
+  - first:
+      213: 7176048479068104705
+    second: gameguy_26
+  - first:
+      213: -8828947458620094799
+    second: gameguy_27
+  - first:
+      213: 1995848485033839943
+    second: gameguy_28
+  - first:
+      213: 246296151384969797
+    second: gameguy_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gameguy_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 397
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b5adc11631ca9ee0800000000000000
+      internalID: -1253477108298177096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 397
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea68646c58b24a4c0800000000000000
+      internalID: -4277245892537973074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 397
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a094e9250e02f900800000000000000
+      internalID: 716650706045800610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_3
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 397
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09cdf653b4928c170800000000000000
+      internalID: 8198848524623797392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_4
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 397
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2fbb85da853c88d0800000000000000
+      internalID: -2842838394373161171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_5
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 397
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3edbb77d54569c5b0800000000000000
+      internalID: -5347631731883393565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 298
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad62974b9e05c860800000000000000
+      internalID: 7549456410440002981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_7
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 298
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd40d05d57ac756a0800000000000000
+      internalID: -6460472533005302561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_8
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 298
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f11775ad72657d70800000000000000
+      internalID: 9040240118802616818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_9
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 298
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f7962665dffd5360800000000000000
+      internalID: 7160160274595878901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_10
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 298
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c871facb19284140800000000000000
+      internalID: 4704055010134161600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_11
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 298
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ad44bc231f200d40800000000000000
+      internalID: 5548486500321349027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 199
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf0f9687155ac1e0800000000000000
+      internalID: -2176833910349033546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_13
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 199
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45185485bd25cb9b0800000000000000
+      internalID: -5063080779039014572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_14
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 199
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e64dc49992d783d0800000000000000
+      internalID: -3204361052782508311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_15
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 199
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc06018e88c699180800000000000000
+      internalID: -9108129436115377972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_16
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 199
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24121b612a48716f0800000000000000
+      internalID: -713956184214658750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_17
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 199
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3c34f8bc60ce8540800000000000000
+      internalID: 5012155008501955643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 100
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14e3b7a478061ada0800000000000000
+      internalID: -5935356699711160767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_19
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 100
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f433e4eb01d3bd7a0800000000000000
+      internalID: -6351415707354385585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_20
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 100
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f5d09da8ea1950a0800000000000000
+      internalID: -6892448168067148299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_21
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 100
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 398cb34a8ef0c46e0800000000000000
+      internalID: -1852087854893905773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_22
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 100
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed95c747616f50b70800000000000000
+      internalID: 8864762017852709342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_23
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 100
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44fd29be17dd20880800000000000000
+      internalID: -8646104853244616892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8008353248475a390800000000000000
+      internalID: -7807706268099706872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_25
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b424f0cb73506750800000000000000
+      internalID: 6296124070047261872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_26
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10826d54212769360800000000000000
+      internalID: 7176048479068104705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_27
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b68c5c6017497580800000000000000
+      internalID: -8828947458620094799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_28
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 1
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d81f76f9da2bb10800000000000000
+      internalID: 1995848485033839943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameguy_29
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 1
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 542d8d47b050b6300800000000000000
+      internalID: 246296151384969797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 51a59be71cf247a4eb6625a6de77b079
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":63.0,"y":98.0},"gridSpriteOffset":{"x":1.0,"y":1.0},"gridSpritePadding":{"x":1.0,"y":1.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      gameguy_0: -1253477108298177096
+      gameguy_1: -4277245892537973074
+      gameguy_10: 4704055010134161600
+      gameguy_11: 5548486500321349027
+      gameguy_12: -2176833910349033546
+      gameguy_13: -5063080779039014572
+      gameguy_14: -3204361052782508311
+      gameguy_15: -9108129436115377972
+      gameguy_16: -713956184214658750
+      gameguy_17: 5012155008501955643
+      gameguy_18: -5935356699711160767
+      gameguy_19: -6351415707354385585
+      gameguy_2: 716650706045800610
+      gameguy_20: -6892448168067148299
+      gameguy_21: -1852087854893905773
+      gameguy_22: 8864762017852709342
+      gameguy_23: -8646104853244616892
+      gameguy_24: -7807706268099706872
+      gameguy_25: 6296124070047261872
+      gameguy_26: 7176048479068104705
+      gameguy_27: -8828947458620094799
+      gameguy_28: 1995848485033839943
+      gameguy_29: 246296151384969797
+      gameguy_3: 8198848524623797392
+      gameguy_4: -2842838394373161171
+      gameguy_5: -5347631731883393565
+      gameguy_6: 7549456410440002981
+      gameguy_7: -6460472533005302561
+      gameguy_8: 9040240118802616818
+      gameguy_9: 7160160274595878901
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

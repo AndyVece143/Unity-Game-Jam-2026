@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6fc8f370ee97db428fdd35074d55550, type: 3}
+  m_Name: Opening 1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  Sentences:
+  - Text: Alright, I made it. The walk was shorter than I expected.
+    emotion: 0
+    name: Penny
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: The other day, a friend of mine told me about a small festival happening
+      in this town.
+    emotion: 0
+    name: Penny
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: I figured that I could use a little relaxation, so here I am.
+    emotion: 1
+    name: Penny
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: I wonder what kind of festivities they have here? It's apparently not a
+      big festival.
+    emotion: 2
+    name: Penny
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: Oh hey, there's a tent over there. I should check it out.
+    emotion: 0
+    name: Penny
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  Character1: {fileID: 0}
+  Character2: {fileID: 0}
+  canPlayerMove: 0
+  opening: 1
