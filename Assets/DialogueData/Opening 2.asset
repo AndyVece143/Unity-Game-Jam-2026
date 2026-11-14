@@ -82,7 +82,7 @@ MonoBehaviour:
     emotion: 1
     name: Game Guy
     sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
-  - Text: They will be in theor colored houses around town! Good luck!
+  - Text: They will be in their colored houses around town! Good luck!
     emotion: 1
     name: Game Guy
     sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
@@ -90,3 +90,7 @@ MonoBehaviour:
   Character2: {fileID: 0}
   canPlayerMove: 1
   opening: 0
+  minigameTransition: 0
+  minigameNumber: 0
+  flyAway: 0
+  gameOver: 0

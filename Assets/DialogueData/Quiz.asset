@@ -26,8 +26,8 @@ MonoBehaviour:
     emotion: 0
     name: Red Triplet
     sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
-  - Text: You know what else I hold dear in my heart? Standardized test! You're taking
-      one right now!
+  - Text: You know what else I hold dear in my heart? Standardized tests! You're
+      taking one right now!
     emotion: 0
     name: Red Triplet
     sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
@@ -54,3 +54,5 @@ MonoBehaviour:
   opening: 0
   minigameTransition: 1
   minigameNumber: 1
+  flyAway: 0
+  gameOver: 0

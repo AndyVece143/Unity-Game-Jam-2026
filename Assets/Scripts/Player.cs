@@ -19,6 +19,10 @@ public class Player : MonoBehaviour
     public SpriteRenderer inspectIcon;
     public InteractableObject closestObject;
     public GamerGirl closestGirl;
+    public YellowLady closestYellow;
+    public OverworldKey closestKey;
+    public GuesserManager closestGuess;
+    public TrueLady closestTrue;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -111,6 +115,34 @@ public class Player : MonoBehaviour
             StopMoving();
             inspectIcon.enabled = false;
         }
+
+        if (context.started && closestYellow != null && state == State.Standard)
+        {
+            closestYellow.TalkToYellow();
+            StopMoving();
+            inspectIcon.enabled = false;
+        }
+
+        if (context.started && closestKey != null && state == State.Standard)
+        {
+            closestKey.PickUpKey();
+            StopMoving();
+            inspectIcon.enabled = false;
+        }
+
+        if (context.started && closestGuess != null && state == State.Standard)
+        {
+            closestGuess.AttemptGuess();
+            StopMoving();
+            inspectIcon.enabled = false;
+        }
+
+        if (context.started && closestTrue != null && state == State.Standard)
+        {
+            closestTrue.TrueGirlTalk();
+            StopMoving();
+            inspectIcon.enabled = false;
+        }
     }
 
     public IEnumerator GoToPlace(Vector2 location, float duration, Vector2 direction)
@@ -170,6 +202,31 @@ public class Player : MonoBehaviour
             if (collision.gameObject.GetComponent("GamerGirl") as GamerGirl != null)
             {
                 closestGirl = collision.gameObject.GetComponent<GamerGirl>();
+                inspectIcon.color = Color.white;
+            }
+
+            if (collision.gameObject.GetComponent("YellowLady") as YellowLady != null)
+            {
+                closestYellow = collision.gameObject.GetComponent<YellowLady>();
+                inspectIcon.color = Color.white;
+            }
+
+            if (collision.gameObject.GetComponent("OverworldKey") as OverworldKey != null)
+            {
+                closestKey = collision.gameObject.GetComponent<OverworldKey>();
+                inspectIcon.color = Color.white;
+            }
+
+            if (collision.gameObject.GetComponent("GuesserManager") as GuesserManager != null)
+            {
+                closestGuess = collision.gameObject.GetComponent<GuesserManager>();
+                inspectIcon.color = Color.white;
+            }
+
+            if (collision.gameObject.GetComponent("TrueLady") as TrueLady != null)
+            {
+                closestTrue = collision.gameObject.GetComponent<TrueLady>();
+                inspectIcon.color = Color.white;
             }
         }
     }
@@ -181,6 +238,10 @@ public class Player : MonoBehaviour
             inspectIcon.enabled = false;
             closestObject = null;
             closestGirl = null;
+            closestYellow = null;
+            closestKey = null;
+            closestGuess = null;
+            closestTrue = null;
         }
     }
 }

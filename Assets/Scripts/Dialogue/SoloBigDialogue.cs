@@ -53,10 +53,13 @@ public class SoloBigDialogue : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && ending == false)
+        if (ending == false)
         {
-            StopAllCoroutines();
-            StartCoroutine(MoveSpritesEnd());
+            if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+            {
+                StopAllCoroutines();
+                StartCoroutine(MoveSpritesEnd());
+            }
         }
     }
 
@@ -161,6 +164,12 @@ public class SoloBigDialogue : MonoBehaviour
         {
             TownManager manager = TownManager.FindAnyObjectByType<TownManager>();
             manager.StartCutscene();
+        }
+
+        if (data.gameOver == true)
+        {
+            LevelLoader loader = LevelLoader.FindAnyObjectByType<LevelLoader>();
+            loader.LoadNextLevel("Title");
         }
 
 

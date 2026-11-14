@@ -23,6 +23,10 @@ public class QuizManager : MonoBehaviour
 
     public GameObject directions;
 
+    public AudioClip click;
+    public AudioClip winSound;
+    public AudioClip lose;
+
     //public AnswerBlock answer1;
     //public AnswerBlock answer2;
     //public AnswerBlock answer3;
@@ -65,6 +69,7 @@ public class QuizManager : MonoBehaviour
         if (playerAnswer.text.Length < 1)
         {
             playerAnswer.text += i.ToString();
+            SoundManager.instance.PlaySound(click);
         }
     }
 
@@ -73,6 +78,7 @@ public class QuizManager : MonoBehaviour
         if (playerAnswer.text.Length != 0)
         {
             playerAnswer.text = playerAnswer.text.Substring(0, playerAnswer.text.Length - 1);
+            SoundManager.instance.PlaySound(click);
         }
     }
 
@@ -168,6 +174,7 @@ public class QuizManager : MonoBehaviour
         {
             buffering = true;
             playerPortrait.ChangeEmotionMinigame(9);
+            SoundManager.instance.PlaySound(click);
             int answerInt = int.Parse(playerAnswer.text);
             QuizPaper newPaper = QuizPaper.FindAnyObjectByType<QuizPaper>();
 
@@ -204,6 +211,7 @@ public class QuizManager : MonoBehaviour
         {
             playerPortrait.ChangeEmotionMinigame(1);
             screenText.text = "YOU PASSED!";
+            SoundManager.instance.PlaySound(winSound);
             screenText.color = Color.green;
 
             yield return new WaitForSeconds(3);
@@ -215,6 +223,7 @@ public class QuizManager : MonoBehaviour
         else
         {
             playerPortrait.ChangeEmotionMinigame(5);
+            SoundManager.instance.PlaySound(lose);
             screenText.text = "YOU FAILED!";
             screenText.color = Color.red;
 

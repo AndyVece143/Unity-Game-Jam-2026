@@ -13,6 +13,8 @@ public class DialogueData : ScriptableObject
     public bool opening;
     public bool minigameTransition;
     public int minigameNumber;
+    public bool flyAway;
+    public bool gameOver;
 }
 
 [System.Serializable]

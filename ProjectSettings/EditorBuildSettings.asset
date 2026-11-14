@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Disclaimer.unity
+    guid: 01bc685a0a680044cb5f10e81ed1f8bb
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: 10929688256948245880eb626d14921c
+  - enabled: 1
     path: Assets/Scenes/Town.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
@@ -14,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Quiz.unity
     guid: 2fe4c55996b9d274991946a4e2f6ef2f
+  - enabled: 1
+    path: Assets/Scenes/Keys.unity
+    guid: 9e2a457784ec8fa4a9055eeaac70cc89
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

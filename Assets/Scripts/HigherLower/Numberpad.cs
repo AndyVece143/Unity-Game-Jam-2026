@@ -15,6 +15,11 @@ public class Numberpad : MonoBehaviour
     public int guesses = 0;
 
     public GameObject directions;
+
+    public AudioClip click;
+    public AudioClip winSound;
+    public AudioClip lose;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -43,6 +48,7 @@ public class Numberpad : MonoBehaviour
         if (playerAnswer.text.Length < 2)
         {
             playerAnswer.text += i.ToString();
+            SoundManager.instance.PlaySound(click);
         }
     }
 
@@ -51,6 +57,7 @@ public class Numberpad : MonoBehaviour
         if (playerAnswer.text.Length != 0)
         {
             playerAnswer.text = playerAnswer.text.Substring(0, playerAnswer.text.Length - 1);
+            SoundManager.instance.PlaySound(click);
         }
     }
 
@@ -98,6 +105,7 @@ public class Numberpad : MonoBehaviour
     {
         if (playerAnswer.text.Length == 2)
         {
+            SoundManager.instance.PlaySound(click);
             playerPortrait.ChangeEmotionMinigame(9);
             buffering = true;
             int answerInt = int.Parse(playerAnswer.text);
@@ -128,6 +136,7 @@ public class Numberpad : MonoBehaviour
             {
                 ladyPortrait.ChangeEmotionMinigame(3);
                 playerPortrait.ChangeEmotionMinigame(1);
+                SoundManager.instance.PlaySound(winSound);
                 Debug.Log("Correct!");
                 hints.color = Color.green;
                 hints.text = "WINNER";
@@ -157,10 +166,13 @@ public class Numberpad : MonoBehaviour
 
     private IEnumerator GameOverYeah()
     {
+        SoundManager.instance.PlaySound(lose);
         playerPortrait.ChangeEmotionMinigame(5);
         ladyPortrait.ChangeEmotionMinigame(2);
         hints.text = "LOSER!";
         hints.color = Color.red;
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
+        LevelLoader loader = LevelLoader.FindAnyObjectByType<LevelLoader>();
+        loader.LoadNextLevel("HigherLower");
     }
 }

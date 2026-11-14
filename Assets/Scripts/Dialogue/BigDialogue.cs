@@ -69,10 +69,13 @@ public class BigDialogue : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && ending == false)
+        if (ending == false)
         {
-            StopAllCoroutines();
-            StartCoroutine(MoveSpritesEnd());
+            if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+            {
+                StopAllCoroutines();
+                StartCoroutine(MoveSpritesEnd());
+            }
         }
     }
 
@@ -340,8 +343,15 @@ public class BigDialogue : MonoBehaviour
                     loader.LoadNextLevel("Quiz");
                     break;
                 case 2:
+                    loader.LoadNextLevel("Keys");
                     break;
             }
+        }
+
+        if (data.flyAway == true)
+        {
+            TownManager manager = TownManager.FindAnyObjectByType<TownManager>();
+            manager.FlyAway();
         }
 
 

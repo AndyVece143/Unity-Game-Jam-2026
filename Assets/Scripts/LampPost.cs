@@ -13,6 +13,11 @@ public class LampPost : MonoBehaviour
     {
         timerMax = timer;
         manager = TownManager.FindAnyObjectByType<TownManager>();
+
+        if (manager.gameProgress < 2)
+        {
+            coolLight.enabled = false;
+        }
     }
 
     // Update is called once per frame

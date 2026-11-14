@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6fc8f370ee97db428fdd35074d55550, type: 3}
+  m_Name: True
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  Sentences:
+  - Text: What the... another triplet member? I don't think we've met.
+    emotion: 0
+    name: Penny
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: No, we have. I am the triplets, the true one.
+    emotion: 0
+    name: True-plet
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: ..................what.
+    emotion: 6
+    name: Penny
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: I was all of the triplets. Whenever you interacted with one, it was me.
+    emotion: 0
+    name: True-plet
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: ...so wait, were you running through the town all day changing clothes
+      and stuff just to pretend to be triplets?
+    emotion: 6
+    name: Penny
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: Yeah, it was a real pain in the ass, let me tell you. It gets tiring after
+      a while.
+    emotion: 2
+    name: True-plet
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: And it's all because the game guy wanted triplets as a marketing gimmick.
+      He should just hire two other people!
+    emotion: 2
+    name: True-plet
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: Anyway, hope I put on a good show! Good luck with the prize!
+    emotion: 1
+    name: True-plet
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  - Text: 'You sure did put on a good show, I had no idea. I''ll be seeing ya! '
+    emotion: 1
+    name: Penny
+    sound: {fileID: 8300000, guid: 5b6bfe88825810c4dabfb90539aad45e, type: 3}
+  Character1: {fileID: 0}
+  Character2: {fileID: 0}
+  canPlayerMove: 1
+  opening: 0
+  minigameTransition: 0
+  minigameNumber: 0
+  flyAway: 0
+  gameOver: 0

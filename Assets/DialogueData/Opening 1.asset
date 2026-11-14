@@ -39,3 +39,6 @@ MonoBehaviour:
   Character2: {fileID: 0}
   canPlayerMove: 0
   opening: 1
+  minigameTransition: 0
+  minigameNumber: 0
+  flyAway: 0
